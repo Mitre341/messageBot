@@ -37,7 +37,7 @@ const textStory  =[
 const imageStory = [
   {img: "images/img0.jpg", text: "They say you’re getting older… so tell me, do you already feel like a granny?"},
   {img: "images/img1.jpg", text: "Today a fake Petra, but tomorrow I wish for you to see the real one too, and all Miracles of the world."},
-  {img: "images/img2.jpg", text: "I wish you many breathtaking places like this. It fits you well"},
+  {img: "images/img2.jpg", text: "I wish you many breathtaking places like this. It fits you well, or better said, you fit well in such places."},
   {img: "images/img3.jpg", text: "But actually I know that something like this fits you more, because you are like a piece of art bold, beautiful, and astonishing. So that would be my wish for you to admire many more astonishing works of 'ass'. Hope we discover many more together."},
 ]
 
@@ -86,7 +86,7 @@ const imgText = document.getElementById("imgText");
 
 function showEnd() {
   document.getElementById("app").innerHTML = `
-    <h1>🎂 MAKE A WISH! 🎂</h1>
+    <h1 class="end">🎂 MAKE A WISH! 🎂</h1>
     <button onclick="location.reload()">🔄 Start again</button>
   `;
 
