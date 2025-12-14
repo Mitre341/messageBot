@@ -55,19 +55,24 @@ background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, F
 
 
 button {
-    position: fixed;
-  bottom: 24px;
-    font-size: 7rem;
+  position: fixed;
+  bottom: 2vh; /* distance from bottom adapts to screen height */
+  font-size: 14vw; /* scales with screen width */
   background: none;
   border: none;
   cursor: pointer;
   outline: none;
   box-shadow: none;
-  
-
-transition: transform 0.12s ease, filter 0.12s ease;
-
+  transition: transform 0.12s ease, filter 0.12s ease;
 }
+
+/* Optional: limit max size for big screens */
+@media(min-width: 768px){
+  button {
+    font-size: 4rem; /* keeps it large on desktops */
+  }
+}
+
 button:hover {
   transform: scale(1.1);
 }
@@ -81,11 +86,4 @@ button:active {
 
 button:focus-visible {
   outline: none;
-}
-
-.fun {
-    /* CSS generated from https://uigradients.com */
-    background: #fc4a1a;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
