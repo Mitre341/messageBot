@@ -38,7 +38,7 @@ background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, F
 }
 
     p{
-        font-size: 1.25em;
+        font-size: 3rem;
         text-align: center;
         width: 80vw;
   white-space: pre-line;
@@ -53,7 +53,7 @@ background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, F
 button {
     position: fixed;
   bottom: 24px;
-    font-size: 4em;
+    font-size: 7em;
   background: none;
   border: none;
   cursor: pointer;
