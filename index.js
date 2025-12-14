@@ -87,7 +87,7 @@ const imgText = document.getElementById("imgText");
 function showEnd() {
   document.getElementById("app").innerHTML = `
     <h1 class="end">🎂 MAKE A WISH! 🎂</h1>
-    <button onclick="location.reload()">🔄 Start again</button>
+    <button class="end onclick="location.reload()">🔄 Start again</button>
   `;
 
 }
