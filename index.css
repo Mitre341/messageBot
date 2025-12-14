@@ -57,7 +57,7 @@ background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, F
 button {
     position: fixed;
   bottom: 24px;
-    font-size: 7em;
+    font-size: 7rem;
   background: none;
   border: none;
   cursor: pointer;
