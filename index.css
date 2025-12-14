@@ -69,7 +69,7 @@ button {
 /* Optional: limit max size for big screens */
 @media(min-width: 768px){
   button {
-    font-size: 7rem; /* keeps it large on desktops */
+    font-size: 14rem; /* keeps it large on desktops */
   }
 }
 
