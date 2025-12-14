@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
 body {
     margin: 0;
+    overflow: hidden;
+
 }
 
 main {
@@ -13,11 +18,36 @@ background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, F
     flex-direction: column;
     align-items: center;
     font-family: Oxygen, sans-serif;
+      justify-content: space-between;
+  padding: 1rem 0;
+
 }
-.output{
-    width: 50%;
-    margin: auto
+#storyImg{
+      width: auto;
+      max-width: 80vw;
+  aspect-ratio: 3 / 4;
+  max-height: 45vh;
+  object-fit: contain;
+  background: white;
+  padding: 10px 10px 30px;
+  border-radius: 8px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+
 }
+
+    p{
+        font-size: 1.25em;
+        border: 2px solid black;
+        text-align: center;
+        width: 80vw;
+  white-space: pre-line;
+  line-height: 1.3;
+  max-width: 60ch;
+
+
+    }
+
+
 
 button {
     font-size: 4em;
@@ -26,6 +56,8 @@ button {
   cursor: pointer;
   outline: none;
   box-shadow: none;
+transition: transform 0.12s ease, filter 0.12s ease;
+
 
 
 
@@ -36,6 +68,17 @@ button {
     border: 1px solid darkred;
     cursor: pointer; */
 }
+button:hover {
+  transform: scale(1.1);
+}
+button:active {
+    transform: scale(0.95) translateY(2px);
+  filter: brightness(0.9);
+
+}
+
+
+
 button:focus-visible {
   outline: none;
 }
