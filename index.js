@@ -1,20 +1,3 @@
-// Hardcoded array of strings
-
-
-let index = 0;
-
-document.getElementById("nextBtn").addEventListener("click", function () {
-  if (index < birthdayStory.length) {
-    console.log(birthdayStory[index]);        // console log
-    document.getElementById("output").textContent = birthdayStory[index]; // show on screen
-    index++;
-  } else {
-    console.log("No more messages");
-    document.getElementById("output").textContent = "No more messages";
-  }
-});
-
-
 const birthdayStory = [
   "0. Paula, today you turn 24. I have 12 reasons, and I will try to double them because today is the 24th.",
   "1. Happy birthday to the woman who carries calm the way others carry noise.",
@@ -40,3 +23,20 @@ const birthdayStory = [
   "21. You remind me that gentleness is not weakness, but a form of quiet strength. Sometimes I am too sensitive, but I love gentleness.",
   "22. Paula, happy 24th birthday. I choose you today, and in every chapter ahead."
 ];
+// Hardcoded array of strings
+
+
+let index = 0;
+
+document.getElementById("nextBtn").addEventListener("click", function () {
+  if (index < birthdayStory.length) {
+    console.log(birthdayStory[index]);        // console log
+    document.getElementById("output").textContent = birthdayStory[index]; // show on screen
+    index++;
+  } else {
+    console.log("No more messages");
+    document.getElementById("output").textContent = "No more messages";
+  }
+});
+
+
